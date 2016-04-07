@@ -1,0 +1,115 @@
+<html>
+<head>
+	<title>List Hewan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/jquery.mobile-1.2.1.min.css" />
+	<link rel="stylesheet" href="../css/jq.css">
+	
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/jquery.mobile-1.2.1.min.js"></script>	
+</head>
+<body>
+	<div data-role="page" id="list">
+		<div data-role="header" data-theme="e">
+			<h1>Prediksi Sakit Kucing</h1>
+		</div>
+		<div data-role="content">
+			<center><h1>Jawab Pertanyaan Berikut:</h1>
+			<div data-role="fieldcontain">
+				<fieldset data-role="controlgroup">
+				
+					<input type="checkbox" name="checkbox-1" id="c1" class="custom">
+					<label for="c1">1. Kucing Anda Mengalami Bulu Rontok?</label>
+					
+					<input type="checkbox" name="checkbox-2" id="c2" class="jawab tidak1">
+					<label for="c2">2. Apakah Di Bulu Ada Terlihat Kulit Kering Seperti Ketombe?</label>
+					
+					
+					
+					<input type="checkbox" name="checkbox-1" id="c3" class="custom">
+					<label for="c3">3. Apakah Kucing Anda Terlihat Buncit Pada Bagian Perut?</label>
+					
+					<input type="checkbox" name="checkbox-1" id="c4" class="custom">
+					<label for="c4">4. Apakah Kucing Anda Sering Mengalami Muntah Tanpa Sebab?</label>
+					
+					<input type="checkbox" name="checkbox-1" id="c5" class="custom">
+					<label for="c5">5. Apakah Terlihat Cacing Putih Pipih Saat Muntah?</label>
+					
+					<input type="checkbox" name="checkbox-1" id="c6" class="custom">
+					<label for="c6">6. Apakah Kucing Anda Mengalami Pilek Berat (Hidung Basah)?</label>
+					
+					<input type="checkbox" name="checkbox-1" id="c15" class="custom">
+					<label for="c15">7. Apakah Ada Kulit Kering cng Mengelupas Pada Bulu?</label>
+					
+					<input type="checkbox" name="checkbox-4" id="c14" class="custom">
+					<label for="c14">4. Apakah Daerah Rontok Bulu Berbentuk Bulat?</label>
+					
+					<input type="checkbox" name="checkbox-1" id="c7" class="custom">
+					<label for="c7">9. Apakah Hidung Kucing Anda Membengkak (Terlihat Kemerahan Atau Borok)?</label>
+					
+					<input type="checkbox" name="checkbox-1" id="c8" class="custom">
+					<label for="c8">10. Apakah Suara Nafas Kucing Anda Berat?</label>
+					
+					<input type="checkbox" name="checkbox-1" id="c9" class="custom">
+					<label for="c9">11. Apakah Terjadi Pengelupasan Kulit Daerah Wajah dan Kepala?</label>
+					
+					<input type="checkbox" name="checkbox-1" id="c10" class="custom">
+					<label for="c10">12. Apakah Kucing Anda Mengalami Bersin-Bersin?</label>
+					
+					<input type="checkbox" name="checkbox-1" id="c11" class="custom">
+					<label for="c11">13. Apakah Kucing Anda Hilang Nafsu Makan?</label>
+					
+					<input type="checkbox" name="checkbox-1" id="c12" class="custom">
+					<label for="c12">14. Apakah Kucing Anda Terlihat Lemah dan Lesu? </label>
+					
+					<input type="checkbox" name="checkbox-1" id="c13" class="custom">
+					<label for="c13">15. Apakah Kucing Anda Mengalami Mata Merah dan Berair? </label>
+					
+					
+				</fieldset></center>
+			</div>
+				
+			
+			<a data-role="button" data-mini="true" href="#" class="check" id="check" data-transition="flow">Prdiksi</a>
+			<script>
+			$("#check").click(function(){
+			var c = 0;
+				$("input[name*=checkbox-]:checked").each(function(){
+				c+=2;
+				
+				});
+				//alert(c).val();
+				if(c>=0 && c<8){
+					alert("Terdeteksi Penyakit Ringworm").val();
+				}else if(c>=8 && c<16){
+				alert("Terdeteksi Penckit Cacingan").val();
+				}else if(c>=16 && c<26){
+					alert("terdeteksi Penckit Jamur Cryptococus").val();
+				}else {
+					alert("Terdeteksi Penckit Flu Kucing").val();
+				}
+			});
+			</script>
+			
+		</div>
+	</div>
+	<div data-role="page" id="result">
+		<div data-role="header" data-theme="e">
+			<p>Hasil Prediksi</p>
+		</div>
+		<div data-role="content">
+			<p>Hewan anda mengalami penckit...<br>
+			<a href="#detail" data-role="button" data-mini="true" data-transition="flow">Lebih Lanjut</a>
+		</div>
+	</div>
+	<div data-role="page" id="detail">
+		<div data-role="header" data-theme="e">
+			<h1>Lebih Jauh</h1>
+		</div>
+		<div data-role="content">
+			<p>bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ bla~ </p>
+		</div>
+	<div>
+	
+</body>
+</html>

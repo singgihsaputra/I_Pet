@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>i - Pet</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/jquery-mobile/jquery.mobile.structure-1.3.1.css" />
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="assets/flex-slider/flexslider.css" type="text/css">
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+  <script src="assets/flex-slider/jquery.flexslider-min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body >
+
+  <div data-role="page" data-theme="a" id="menu">
+    <!-- Side Navigation Panel -->
+    <div data-role="panel" id="sideNav" data-position="left">
+      <ul id="sideButtons">
+        <li>
+          <a href="#"><i class="icon-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="icon-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="icon-linkedin"></i></a>
+        </li>
+          <li>
+          <a href="#"><i class="icon-google-plus"></i></a>
+        </li>
+      </ul>
+      <ul id="sidePanel" class="clleft">
+        <li ><a href="index.html"><i class="icon-home"></i> Home</a></li>
+        <li id="active"><a href="about.html"><i class="icon-lightbulb"></i> About Us</a></li>
+        <li><a href="typography.html"><i class="icon-star"></i> Features</a></li>
+        <li><a href="typography.html"><i class="icon-font"></i> Typography</a></li>
+        <li><a href="contact.html"><i class="icon-envelope"></i> Contact Us</a></li>
+      </ul>
+    </div>
+    <!-- End Side Navigation -->
+    <!-- Header -->
+    <div data-role="header" data-position="fixed">
+      <h1 id="judul"></h1>
+      <a href="#sideNav" id="navIcon"><i class="icon-th-list"></i></a>
+    </div>
+    <!-- End Header -->
+    <!-- Content Start -->
+    <div data-role="content" id="content">
+                <input type="search" name="search" id="search-basic" value="" />           
+                <a href="#cat-perawatan" data-role="button" data-transition="flip">Perawatan</a>
+                <a href="#cat-penyakit" data-role="button" data-transition="flip">Penyakit</a>
+                <a href="#cat-konsultasi" data-role="button" data-transition="flip">Konsultasi</a>
+                <a href="#cat-check-up" data-role="button" data-transition="flip">Check Up</a>
+                <a href="#lain" data-role="button" data-transition="flip"></a>
+        <div class="clleft"></div>
+        <hr/>
+        <div class="footer text-center">
+          <p>COPYRIGHT 2013. ALL RIGHTS RESERVED!</p>
+        </div><!-- /footer -->
+    </div>
+    <!-- End Content -->
+  
+
+  </div><!-- /page -->
+
+</body>
+</html>

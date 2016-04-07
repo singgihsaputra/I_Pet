@@ -1,0 +1,234 @@
+<!DOCTYPE html> 
+<html> 
+    <head lang="en"> 
+        <title>i - Pet</title>     
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta charset="utf-8">     
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.css" />    
+        
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>
+
+    </head> 
+    <body> 
+        <div data-role="page" id="home">
+        
+            <div data-role="header">
+                <h1>Nama Aplikasi</h1>
+                <a href="#about" data-icon="star" class="ui-btn-right" data-rel="dialog">About</a>
+            </div>
+            <div data-role="content">
+                <input type="search" name="search" id="search-basic" value="" />   
+                <ul data-role="listview" data-inset="true">  
+                    <li data-role="list-divider">Choose your pet</li>                            
+                    <li><a href="#dog" data-transition="slide">Dog</a></li>
+                    <li><a href="#cat" data-transition="slide">Cat</a></li>
+                    <li><a href="#hamster" data-transition="slide">Hamster</a></li>
+                    <li><a href="#rooster" data-transition="slide">Rooster</a></li>
+                    <li><a href="#load" data-transition="slide">Load more</a></li>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h4>Prod. 2013</h4>
+            </div>
+        </div>
+        <div data-role="page" id="about">
+            <div data-role="header">
+                <h1>Hi</h1>
+            </div>
+            <div data-role="content">
+                <p>Tugas PAPB</p>
+                <p>Squad</p>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="page" id="dog" data-position="fixed" data-add-back-btn="true">
+        
+            <div data-role="header">
+                <h1>Dog</h1>
+            </div>
+            <div data-role="content">
+                <input type="search" name="search" id="search-basic" value="" />           
+                <a href="#dog-perawatan" data-role="button" data-transition="flip">Perawatan</a>
+                <a href="#dog-penyakit" data-role="button" data-transition="flip">Penyakit</a>
+                <a href="#dog-konsultasi" data-role="button" data-transition="flip">Konsultasi</a>
+                <a href="#dog-check-up" data-role="button" data-transition="flip">Check Up</a>
+                <a href="#lain" data-role="button" data-transition="flip"></a>
+            </div>
+        </div>
+        <div data-role="page" id="cat" data-position="fixed" data-add-back-btn="true">
+            <div data-role="header">
+                <h1>Cat</h1>
+            </div>
+            <div data-role="content">
+                <input type="search" name="search" id="search-basic" value="" />           
+                <a href="#cat-perawatan" data-role="button" data-transition="flip">Perawatan</a>
+                <a href="#cat-penyakit" data-role="button" data-transition="flip">Penyakit</a>
+                <a href="#cat-konsultasi" data-role="button" data-transition="flip">Konsultasi</a>
+                <a href="#cat-check-up" data-role="button" data-transition="flip">Check Up</a>
+                <a href="#lain" data-role="button" data-transition="flip"></a>
+            </div>
+        </div>
+        <div data-role="page" id="hamster" data-position="fixed" data-add-back-btn="true">
+            <div data-role="header">
+                <h1>Hamster</h1>
+            </div>
+            <div data-role="content">
+                <input type="search" name="search" id="search-basic" value="" />           
+                <a href="#hamster-perawatan" data-role="button" data-transition="flip">Perawatan</a>
+                <a href="#hamster-penyakit" data-role="button" data-transition="flip">Penyakit</a>
+                <a href="#hamster-konsultasi" data-role="button" data-transition="flip">Konsultasi</a>
+                <a href="#hamster-check-up" data-role="button" data-transition="flip">Check Up</a>
+                <a href="#lain" data-role="button" data-transition="flip"></a>
+            </div>
+        </div>
+        <div data-role="page" id="rooster" data-position="fixed" data-add-back-btn="true">
+            <div data-role="header">
+                <h1>Rooster</h1>
+            </div>
+            <div data-role="content">
+                <input type="search" name="search" id="search-basic" value="" />           
+                <a href="#rooster-perawatan" data-role="button" data-transition="flip">Perawatan</a>
+                <a href="#rooster-penyakit" data-role="button" data-transition="flip">Penyakit</a>
+                <a href="#rooster-konsultasi" data-role="button" data-transition="flip">Konsultasi</a>
+                <a href="#rooster-check-up" data-role="button" data-transition="flip">Check Up</a>
+                <a href="#lain" data-role="button" data-transition="flip"></a>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+       <!--Fitur Perawatan-->
+          <div data-role="page" id="dog-perawatan" data-position="fixed" data-add-back-btn="true">
+            <div data-role="header">
+                <h1>Dog - Perawatan</h1>
+            </div>
+            <div data-role="content"><center>
+                <img src="images/dog.png" width="150px" height="150px" ></center>
+                <a href="#dog-perawatan-memandikan" data-role="button" data-transition="flip" data-theme="e">Memandikan</a>
+                <a href="#dog-perawatan-makanan" data-role="button" data-transition="flip" data-theme="e">Pilihan Makanan</a>
+                <a href="#dog-konsultasi-kutu" data-role="button" data-transition="flip" data-theme="e">Pembersihan Kutu</a>
+                <a href="#dog-check-up-kuku" data-role="button" data-transition="flip" data-theme="e">Pemotongan Kuku</a>
+                <a href="#lain" data-role="button" data-transition="flip"></a>
+            </div>
+        </div>
+        
+         <div data-role="page" id="cat-perawatan" data-position="fixed" data-add-back-btn="true">
+            <div data-role="header">
+                <h1>Cat - Perawatan</h1>
+            </div>
+            <div data-role="content">
+                   <center> <img src="images/cat.png" width="150px" height="150px" ></center>
+                <a href="#cat-perawatan-memandikan" data-role="button" data-transition="flip" data-theme="e">Memandikan</a>
+                <a href="#cat-perawatan-makanan" data-role="button" data-transition="flip" data-theme="e">Pilihan Makanan</a>
+                <a href="#cat-konsultasi-kutu" data-role="button" data-transition="flip" data-theme="e">Pembersihan Kutu</a>
+                <a href="#cat-check-up-kuku" data-role="button" data-transition="flip" data-theme="e">Pemotongan Kuku</a>
+                <a href="#lain" data-role="button" data-transition="flip"></a>
+            </div>
+        </div>
+        
+        <div data-role="page" id="hamster-perawatan" data-position="fixed" data-add-back-btn="true">
+            <div data-role="header">
+                <h1>Hamster - Perawatan</h1>
+            </div>
+            <div data-role="content">
+              <center> <img src="images/hamster.png" width="150px" height="150px" ></center>
+                <a href="#hamster-perawatan-memandikan" data-role="button" data-transition="flip" data-theme="e">Memandikan</a>
+                <a href="#hamster-perawatan-makanan" data-role="button" data-transition="flip" data-theme="e">Pilihan Makanan</a>
+                <a href="#hamster-konsultasi-kutu" data-role="button" data-transition="flip" data-theme="e">Pembersihan Kutu</a>
+                <a href="#hamster-check-up-kuku" data-role="button" data-transition="flip" data-theme="e">Pemotongan Kuku</a>
+                <a href="#lain" data-role="button" data-transition="flip"></a>
+            </div>
+        </div>
+        
+         <div data-role="page" id="rooster-perawatan" data-position="fixed" data-add-back-btn="true">
+            <div data-role="header">
+                <h1>Rooster - Perawatan</h1>
+            </div>
+            <div data-role="content">
+             <center> <img src="images/rooster.png" width="150px" height="150px" ></center>
+                <a href="#rooster-perawatan-memandikan" data-role="button" data-transition="flip" data-theme="f">Memandikan</a>
+                <a href="#rooster-perawatan-makanan" data-role="button" data-transition="flip" data-theme="g">Pilihan Makanan</a>
+                <a href="#rooster-konsultasi-kutu" data-role="button" data-transition="flip" data-theme="i">Pembersihan Kutu</a>
+                <a href="#rooster-check-up-kuku" data-role="button" data-transition="flip" data-theme="e">Pemotongan Kuku</a>
+                <a href="#lain" data-role="button" data-transition="flip"></a>
+            </div>
+        </div>
+        
+         <div data-role="page" id="rooster-perawatan" data-position="fixed" data-add-back-btn="true">
+            <div data-role="header">
+                <h1>Rooster - Perawatan</h1>
+            </div>
+            <div data-role="content">
+             <center> <img src="images/rooster.png" width="150px" height="150px" ></center>
+                <a href="#rooster-perawatan-memandikan" data-role="button" data-transition="flip" data-theme="f">Memandikan</a>
+                <a href="#rooster-perawatan-makanan" data-role="button" data-transition="flip" data-theme="g">Pilihan Makanan</a>
+                <a href="#rooster-konsultasi-kutu" data-role="button" data-transition="flip" data-theme="i">Pembersihan Kutu</a>
+                <a href="#rooster-check-up-kuku" data-role="button" data-transition="flip" data-theme="e">Pemotongan Kuku</a>
+                <a href="#lain" data-role="button" data-transition="flip"></a>
+            </div>
+        </div>
+        
+        <div data-role="page" id="dog-perawatan-memandikan" data-position="fixed" data-add-back-btn="true">
+            <div data-role="header">
+                <h1>Dog</h1>
+            </div>
+            <div data-role="content">
+            <h2>Cara Memandikan</h2>
+             <center> <img src="images/dog-bath.jpg" width="150px" height="150px" ></center>
+            <ol><li>Persiapkan semua kebutuhan perlengkapan mandi sebelum anda memulai : Handuk, Shampoo, Conditioner, Sisir dan perlengkapan lain-lainnya yang kira-kira akan dibutuhkan. </li>
+            <li>Sisirlah bulu-bulu anjing agar bulu-bulu tua dan kusut terlepas. Jika kelihatan ada kutu atau pinjal yang menempel segera ambil menggunakan pinset</li>
+            <li>Basahi atau siram bulu-bulu anjing dengan air hangat secara merata. Lipat kedua telinga ke bawah saat menyiram bagian kepala agar air tidak masuk ke dalam telinganya.</li>
+            <li> Usapkan sampo sedikit demi sedikit dari kepala sampai ekor dan gosok menggunakan washlap hingga berbusa. Kemudian menggunakan sikat nandi, sikatlah bulu-bulu anjing berlawanan arah tumbuhnya agar kulit dan bulu tercuci sempurna. Lakukan hal ini dengan hati-hati agar busa sampo tidak mengenai mata anjing.</li>
+            <li>Setelah itu, bilas dengan ait hangat sampai busa sampo tak tersisa, jika dirasakan bulu masih kotor anjing bisa diberi sampo lagi dan dibilas sampai bersih dan benar.</li>
+            <li>Keringkan bulu-bulu anjing menggunakan handuk jika handuk sudah basah dan bulu masih basah, gunakan handuk lainnya yang masih kering. Pastikan bulu-bulu anjing kering dengan benar.</li>
+            <li>Pengeringan selanjutnya menggunakan hairdryer dengan tingkat panas yang sedang. Saat dikeringkan tersebut sisirlah bulu anjing dengan arah berlawanan tumbuhnya, sehingga bulu anjing kering tetapi tidak kusut</li></ol>
+            </div>
+        </div>
+        
+         <div data-role="page" id="dog-perawatan-makanan" data-position="fixed" data-add-back-btn="true">
+        
+            <div data-role="header">
+                <h1>Dog</h1>
+            </div>
+            <div data-role="content">
+            <h2>Cara Memilih Makanan</h2>
+             
+            <a href="#default panel">Open panel</a>
+             <center> <img src="images/dog-food.png" width="150px" height="150px" ></center>
+            <ol><li>Lihat ingredients atau kandungan di kemasan dog food, Pertama lihat kandungan proteinnya, pilih sesuai keaktifan anjing anda, jika anjing anda anjing pekerja yang bekerja setiap hari, latihan setiap hari, maka cari yang diatas 25 %, jika hanya dikandang atau dirumah, jarang keluar rumah, beri yang protein 22 %.
+</li>
+            <li>Sisirlah bulu-bulu anjing agar bulu-bulu tua dan kusut terlepas. Jika kelihatan ada kutu atau pinjal yang menempel segera ambil menggunakan pinset</li>
+            <li>Lihat kandungan fat / lemaknya pilih dalam kisaran 13 - 18 %, lihat apa saja kelebihan lainnya seperti vitamin, mineral, dan lain-lain.</li>
+            <li>Cari dog food yang mempunyai reputasi yang baik dan serta mudah untuk didapatkan. Anjing adalah anggota keluarga kita, upayakan jangan memberikan dog food atau makanan anjing yang berkualitas buruk karena akan mempengaruhi kesehatan hewan kesayangan kita.</li>
+            <li>Setelah membelinya, lihat apakah cocok pada anjing anda, biasanya terlihat setelah pemakaian setengah bulan, perhatikan apa ada masalah kulit, kotorannya bagus (tidak lembek),  bila cocok, tidak ada keluhan bisa dilanjutkan. Jangan lupa melihat masa kadaluarsa Dog food, pilih yang jauh dari tanggal kadaluarsa yang tertulis.</li>
+            <li>Lebih baik tidak ganti - ganti dog food jika sudah cocok, jangan mengikuti kemauan anjing anda, bila dia bosan dengan dog foodnya, karena anda lah  boss-nya, bukan dia, jadi dia harus tetap makan dog food itu.</li>
+            <li>Perhatikan juga jenis anjing kita apakah anjing ras besar atau kecil karena akan mempengaruhi ukuran butiran dog food atau makanan anjing yang dikonsumsi.</li>
+            <li>Perhatikan juga apakah anjing kita masih kategori anakan / puppy atau sudah dewasa karena ini juga mempengaruhi pemilihan dog food atau makanan anjing tersebut.</li>
+            <li>Apabila anjing kita jenis ras kecil dan makannya sedikit, beli lah kemasan yang tidak terlalu besar, hal ini untuk menjaga kualitas dog food atau makanan anjing tersebut agar tidak terlalu lama habis yang nantinya akan mempengaruhi kualitas dog food tersebut.</li>
+           
+            </ol>
+            </div>
+            <div data-role="panel" id="defaultpanel" data-theme="b">	
+    <div class="panel-content">
+      <h3>Default panel options</h3>
+      <p>This panel has all the default options: positioned on the left with the reveal display mode. The panel markup is <em>before</em> the header, content and footer in the source order.</p>
+      <p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
+      <a href="#demo-links" data-rel="close" data-role="button" data-theme="c" data-icon="delete" data-inline="true">Close panel</a>
+    </div><!-- /content wrapper for padding -->
+  </div><!-- /defaultpanel -->
+        </div>
+        
+        
+      
+    </body>
+</html> 
